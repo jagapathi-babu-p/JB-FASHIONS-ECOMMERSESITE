@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Jost' , sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top : 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 35px;
+    color: #000000;
+    font-weight: 600;
+    max-width: 120px;
+    margin-left: 10px;
+    height: auto;
+}
+
+.navmenu{
+    display: flex;
+}
+
+.navmenu a{
+    color: black;
+    font-size: 16px;
+    padding: 10px  20px;
+    font-weight: 600;
+    transition: all .42s ease;
+}
+
+.navmenu a:hover {
+color: dodgerblue;
+}
+
+.navicons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.navicons a{
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+
+.navicons a:hover{
+    color: dodgerblue;
+    transform:scale(1.1);
+}
+
+#menuicon{
+    font-size: 35px;
+    color: dodgerblue;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+section{
+    padding: 10% 10%;
+}
+
+.main-home{
+    background-image: url(img/banner-3.png);
+    width: 100%;
+    margin-top: 20px;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+}
+.main-text{
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.main-text h5{
+    color: dodgerblue;
+    text-transform: capitalize; 
+    font-size: 20px;  
+}
+
+.main-text h1{
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+
+
+.main-text p{
+    color :rgb(7, 7, 7);
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.main-btn{
+    display: inline-block;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid;
+    padding: 12px 20px;
+    transition: all .42s ease;
+}
+
+.main-btn:hover{
+    color: #ffffff;
+    background-color: dodgerblue;
+}
+
+.icon-arrow{
+    padding-bottom: 50px;
+}
+
+.down-arrow{
+    position: absolute;
+    top: 85%;
+    right: 11%;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.down-arrow a{
+   border: 2px solid;
+   border-color: dodgerblue;
+   border-radius: 50%;
+   padding: 22px ;
+}
+
+.down-arrow .down{
+    font-size: 30px;
+    border: 2px solid;
+    border-color: dodgerblue;
+    text-decoration: none;
+    border-radius: 50%;
+    padding: 10px 18px;
+ }
+
+ .down:hover{
+    color: whitesmoke;
+    background-color: dodgerblue;
+    transition: all .42s ease;
+ }
+
+ header.sticky{
+    background: #fff;
+    padding: 15px 10%;
+    box-shadow: 0px 0px 10px,rgb(0, 0, 0/10%);
+ }
+
+ .center-text h2{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+
+ }
+
+ .products{
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, minmax(25px, auto));
+    gap: 2rem;
+ }
+
+ .row{
+    position: relative;
+    transition: all .40s;
+ }
+
+ .row img{
+    width:100%;
+    
+    transition: all .40s;
+ }
+
+ .row img:hover{
+  transform: scale(0.9);
+ }
+
+ .product-text h5{
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    background-color: rgba(17, 126, 17, 0.738);
+    padding: 3px 10px;
+    border-radius: 2px;
+ }
+
+ .heart-icon{
+    position: absolute;
+    right: 0;
+    font-size: 15px;
+ }
+
+ .heart-icon:hover{
+    color: rgb(255, 30, 30);
+ }
+
+ .rating{
+    color: green;
+    font-size: 15px;
+ }
+
+ .price h5{
+    font-size: 15px;
+    font-weight: 500;
+ }
+
+ .price p{
+    font-size: 15px;
+    font-weight: 600;
+ }
+
+ .client-review{
+    margin-top: -20px;
+    background-color: gainsboro;
+ }
+
+ .review{
+    margin-top: -5%;
+    text-align: center;
+
+ }
+
+ .review h3{
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 700;
+ }
+
+ .review img{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin: 10px 0;
+ }
+ 
+ .review p{
+    color: #535151;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 10px;
+ }
+
+ .review h2{
+    color: #000000;
+    font-size: 25px;
+    text-align: center;
+ }
+
+ .up-text-center h2{
+    text-align: center;
+    color: #000000;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 30px;
+ }
+
+ .cart img{
+    width: 400px;
+    height: auto;
+    border-radius: 5px;
+ }
+
+ .update-cart{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(400px, auto));
+    gap: 1.5rem;
+ }
+
+ .cart p{
+    color: #535151;
+    font-size: 15px;
+    max-width: 400px;
+    line-height: 20px;
+    margin-top: 10px;
+ }
+
+ .contact{
+    background-color: gainsboro;
+ }
+
+ .contact-info{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(4,minmax(80px,auto));
+    gap: 3rem;
+ }
+
+ .first-info{
+    margin-top: -50px;
+ }
+
+ .social-icon a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    margin-right: 10px;
+    padding: 8px;
+    transition: all .42s;
+ }
+
+ .first-info h2{
+    font-size: 40px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    margin-left: 10px;
+ }
+
+ .contact-info h4{
+    color: #000000;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    cursor: pointer;
+ }
+
+ .contact-info h4:hover{
+    color: red;
+ }
+
+
+
+ .contact-info p{
+    color: #535151;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42s;
+ }
+
+ .contact-info p:hover{
+    color: dodgerblue;
+ }
+
+ .social-icon a:hover{
+    color: dodgerblue;
+ }
+
+ .end-text{
+    color: #535151;
+    text-align: center;
+    padding: 20px;
+    text-transform: capitalize;
+ }
+
+@media(max-width:890px){
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+}
+
+@media(max-width:630px){
+    .main-text h1{
+        font-size: 50px;
+        transition: .4s;
+    }
+
+    .main-text p{
+        font-size: 18px;
+        transition: .4s;
+    }
+
+    .main-btn{
+        padding: 10px 20px;
+        transition: .4s;
+    }
+}
+
+@media(max-width:750px){
+    .navmenu{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 130vh;
+        background: #edfff1;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 30px;
+        transition: all .42s;
+    }
+
+    .navmenu a {
+        display: block;
+        margin: 18px 0;
+    }
+
+    .navmenu.open{
+        right: 0;
+    }
+}
